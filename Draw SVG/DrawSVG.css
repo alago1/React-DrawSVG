@@ -1,0 +1,53 @@
+.comp *,
+.decomp * {
+  /* required for animation components to work */
+  animation: inherit;
+}
+
+.comp path,
+.decomp path {
+  /* default config for drawing svgs (independent of type of animation) */
+  stroke-dasharray: 1;
+  stroke-width: 1;
+  stroke: #f5f5f5;
+  stroke-opacity: 1;
+}
+
+.comp path {
+  stroke-dashoffset: 1;
+}
+
+.decomp path {
+  stroke-dashoffset: 0;
+}
+
+@keyframes comp-outline-svg {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes decomp-outline-svg {
+  to {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes comp-fill-svg {
+  from {
+    fill: transparent;
+  }
+}
+
+@keyframes decomp-fill-svg {
+  to {
+    fill: transparent;
+  }
+}
+
+@keyframes delay-fill {
+  0%,
+  100% {
+    fill: transparent;
+  }
+}
