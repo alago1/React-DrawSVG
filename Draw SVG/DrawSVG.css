@@ -7,14 +7,14 @@
 .comp path,
 .decomp path {
   /* default config for drawing svgs (independent of type of animation) */
-  stroke-dasharray: var(--pathLength);
+  stroke-dasharray: 1;
   stroke-width: 1;
   stroke: #f5f5f5;
   stroke-opacity: 1;
 }
 
 .comp path {
-  stroke-dashoffset: var(--pathLength);
+  stroke-dashoffset: 1;
 }
 
 .decomp path {
@@ -30,7 +30,7 @@
 
 @keyframes decomp-outline-svg {
   to {
-    stroke-dashoffset: var(--pathLength);
+    stroke-dashoffset: 1;
   }
 }
 
