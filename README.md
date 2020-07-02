@@ -5,7 +5,7 @@ A place where I will drop any components made for the purpose of facilitating an
 
 ### Draw SVG
 
-Component made when creating [my website](www.allan-lago.herokuapp.com). I found this component to be an easier method to control animations that are fundamentally CSS-only but that need some connection with Javascript code in ReactJS. For instance, with this it is easy to call one or many animations with a button click without having to search through the DOM tree or (in the case of many elements in the tree) without having to create many references.
+Component made when creating [my website](https://allan-lago.herokuapp.com/). I found this component to be an easier method to control animations that are fundamentally CSS-only but that need some connection with Javascript code in ReactJS. For instance, with this it is easy to call one or many animations with a button click without having to search through the DOM tree or (in the case of many elements in the tree) without having to create many references.
 
 It facilitates the popular animation of path components of an svg.
 
