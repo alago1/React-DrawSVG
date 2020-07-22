@@ -4,7 +4,7 @@ import React, {
   useImperativeHandle,
   useEffect,
 } from "react";
-import "./DrawSVG.module.css";
+import "./DrawSVG.css";
 
 function DrawSVG(props, ref) {
   const child = React.Children.only(props.children);
