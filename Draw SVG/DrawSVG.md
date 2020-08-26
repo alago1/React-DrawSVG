@@ -55,23 +55,23 @@ Excerpt from source code:
 
 ```javascript
 useImperativeHandle(ref, () => ({
-  playStartAnimation(
+  playStartAnimation({
     duration = 2000,
     delay = 0,
     easingFunction = "ease",
     disableFilling = false,
-    startTransparent = false
-  ) {
+    startTransparent = false,
+  }) {
     //... [code goes here]
     return new Promise((resolve) => setTimeout(resolve, duration + delay));
   },
-  playEndAnimation(
+  playEndAnimation({
     duration = 2000,
     delay = 0,
     easingFunction = "ease",
     disableFilling = false,
-    startTransparent = false
-  ) {
+    startTransparent = false,
+  }) {
     //... [code goes here]
     return new Promise((resolve) => setTimeout(resolve, duration + delay));
   },
