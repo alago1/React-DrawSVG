@@ -1,0 +1,31 @@
+{
+  "name": "react-drawsvg",
+  "version": "1.0.0",
+  "description": "react component for svg drawing animations in javascript",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "react-drawsvg",
+    "react",
+    "svg",
+    "drawsvg"
+  ],
+  "author": "Allan Lago",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0"
+  }
+}

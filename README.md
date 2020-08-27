@@ -20,13 +20,14 @@ Example:
 
 ```javascript
 import { ReactComponent as SVGReactComponent } from "./my_svgs_path.svg";
+import DrawSVG from "react-drawsvg";
 ```
 
 ```html
 <DrawSVG
   startTransparent
-  duration="{5000}"
-  delay="{3000}"
+  duration={5000}
+  delay={3000}
   easingFunction="ease-in"
 >
   <SVGReactComponent />
