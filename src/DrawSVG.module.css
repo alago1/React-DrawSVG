@@ -2,6 +2,7 @@
 .decomp * {
   /* required for animation components to work */
   animation: inherit;
+  stroke: inherit;
 }
 
 .comp path,
@@ -9,7 +10,6 @@
   /* default config for drawing svgs (independent of type of animation) */
   stroke-dasharray: 1;
   stroke-width: 1;
-  stroke: #f5f5f5;
   stroke-opacity: 1;
 }
 

@@ -36,6 +36,7 @@ import DrawSVG from "react-drawsvg";
   startTransparent
   duration={5000}
   delay={3000}
+  strokeColor="black"
   easingFunction="ease-in"
 >
   <SVGReactComponent />
@@ -44,16 +45,22 @@ import DrawSVG from "react-drawsvg";
 
 #### Requirements for this to work
 
-- No other animations affect the _DrawSVG_'s descendents.
 - Each _DrawSVG_ tag should only have one child.
+- No other animations affect the _DrawSVG_'s descendents.
+
 
 #### Optional Arguments
 
-- duration: [String / Number] milliseconds
-- delay: [String / Number] milliseconds
-- easingFunction: [String] denoting the CSS's animation easing function
-- disableFilling: [Boolean] sets the svg's path fill to "transparent" (cannot be reverted)
-- startTransparent: [Boolean] sets the svg's path fill to "transparent" only while the animation is on delay (only valid for composition)
+| Option | Acceptable types | default values | description|
+|--------|------------------|----------------|------------|
+| *type* | "comp" \| "decomp" | "comp" | animation type when the component mounts|
+|*duration*| String \| Number | 2000| number of milliseconds of animation|
+|*delay*| String \| Number | 0 | number of milliseconds of animation delay|
+|*strokeColor*| String | _whitesmoke_ (#f5f5f5) | CSS expression for the color of the path's stroke|
+|*easingFunction*| String | *ease* | CSS expression for the path's animation easing function|
+|*disableFilling* | Boolean | false | whether the svg's path fill should be set to "transparent" (cannot be reverted)|
+|*startTransparent* | Boolean | false | whether the svg's path fill should be set to "transparent" only throughout the animation's delay (only valid for composition)
+
 
 #### Usage Examples
 
@@ -66,6 +73,7 @@ useImperativeHandle(ref, () => ({
   playStartAnimation({
     duration = 2000,
     delay = 0,
+    strokeColor = "#f5f5f5",
     easingFunction = "ease",
     disableFilling = false,
     startTransparent = false,
@@ -76,6 +84,7 @@ useImperativeHandle(ref, () => ({
   playEndAnimation({
     duration = 2000,
     delay = 0,
+    strokeColor = "#f5f5f5",
     easingFunction = "ease",
     disableFilling = false,
     startTransparent = false,

@@ -16,7 +16,8 @@ function DrawSVG(props, ref) {
         ? props.animation
         : "comp", //function
     duration: props.duration ?? 2000, //animation duration
-    delay: props.delay ?? 0, //animation delay
+    delay: props.delay ?? 0, //animation delay,
+    strokeColor: props.strokeColor ?? "#f5f5f5", //path stroke color
     easingFunction: props.easingFunction ?? "ease", //easing function of outline animation
     disableFilling: props.disableFilling ?? false, //if only the outline should be drawn
     startTransparent: props.startTransparent ?? false, //if the svg should be transparent before animation starts
@@ -37,6 +38,7 @@ function DrawSVG(props, ref) {
     playStartAnimation({
       duration = 2000,
       delay = 0,
+      strokeColor = "#f5f5f5",
       easingFunction = "ease",
       disableFilling = false,
       startTransparent = false,
@@ -45,6 +47,7 @@ function DrawSVG(props, ref) {
         type: "comp",
         duration: duration,
         delay: delay,
+        strokeColor: strokeColor,
         easingFunction: easingFunction,
         disableFilling: disableFilling,
         startTransparent: startTransparent,
@@ -54,6 +57,7 @@ function DrawSVG(props, ref) {
     playEndAnimation({
       duration = 2000,
       delay = 0,
+      strokeColor = "#f5f5f5",
       easingFunction = "ease",
       disableFilling = false,
       startTransparent = false,
@@ -62,6 +66,7 @@ function DrawSVG(props, ref) {
         type: "decomp",
         duration: duration,
         delay: delay,
+        strokeColor: strokeColor,
         easingFunction: easingFunction,
         disableFilling: disableFilling,
         startTransparent: startTransparent,
@@ -100,6 +105,7 @@ function DrawSVG(props, ref) {
       className={`${module_styles[anim.type]} ${props.className ?? ""}`}
       style={{
         animation: animationDescription,
+        stroke: anim.strokeColor,
         ...props.style,
       }}
       ref={ref}
