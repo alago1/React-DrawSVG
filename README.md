@@ -1,8 +1,16 @@
-### Draw SVG
+# React DrawSVG
 
-Component made when creating [my website](allan-lago.herokuapp.com). I found this component to be an easier method to control animations that are fundamentally CSS-only but that need some connection with Javascript code in ReactJS. For instance, with this it is easy to call one or many animations with a button click without having to search through the DOM tree or (in the case of many elements in the tree) without having to create many references.
+Component made when creating [my website](allan-lago.herokuapp.com).
+
+I found that this component provides an easier way to control animations that are fundamentally CSS-only but that need some control on the JS/React side. For instance, with this, it is easy to call one or many animations with a button click without having to search through the DOM tree or (in the case of many elements in the tree) without having to create many references.
 
 It facilitates the popular animation of path components of an svg.
+
+### How to install
+
+```
+npm i react-drawsvg
+```
 
 #### What it makes easier
 
@@ -37,8 +45,7 @@ import DrawSVG from "react-drawsvg";
 #### Requirements for this to work
 
 - No other animations affect the _DrawSVG_'s descendents.
-- _DrawSVG_ should only have one child
-  - This requirement could be changed in the source code by changing _DrawSVG_'s children from '_child_' to '_props.children_' but I have not tested anything on that realm.
+- Each _DrawSVG_ tag should only have one child.
 
 #### Optional Arguments
 

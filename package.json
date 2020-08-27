@@ -1,7 +1,7 @@
 {
   "name": "react-drawsvg",
-  "version": "1.0.0",
-  "description": "react component for svg drawing animations in javascript",
+  "version": "1.0.1",
+  "description": "React component for dynamic svg drawing animations in javascript",
   "main": "./build/index.js",
   "scripts": {
     "build": "webpack"
@@ -14,6 +14,14 @@
   ],
   "author": "Allan Lago",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alago1/React-DrawSVG.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alago1/React-DrawSVG/issues"
+  },
+  "homepage": "https://github.com/alago1/React-DrawSVG#readme",
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
